@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.6 on win32)" generated="2025-08-18T11:01:30.567306" rpa="false" schemaversion="5">
+<suite id="s1" name="Primeiro Teste" source="D:\Estudos\ALURA\robot\curso-robot\primeiro_teste.robot">
+<test id="s1-t1" name="Abrir navegador e acesso do organo" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-18T11:01:30.895381" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'.</msg>
+<arg>url=http://localhost:3000/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-18T11:01:30.895139" elapsed="2.779480"/>
+</kw>
+<status status="PASS" start="2025-08-18T11:01:30.894211" elapsed="2.780872"/>
+</test>
+<test id="s1-t2" name="Preencher os campos do formulario" line="8">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-18T11:01:33.676847" level="INFO">Typing text 'Carlos Eduardo' into text field 'id:form-nome'.</msg>
+<arg>id:form-nome</arg>
+<arg>Carlos Eduardo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T11:01:33.676349" elapsed="0.135413"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-18T11:01:33.812374" level="INFO">Typing text 'Desenvolvedor Senior' into text field 'id:form-cargo'.</msg>
+<arg>id:form-cargo</arg>
+<arg>Desenvolvedor Senior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T11:01:33.812105" elapsed="0.098283"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-18T11:01:33.910931" level="INFO">Typing text 'https://picsum.photos/200/300' into text field 'id:form-imagem'.</msg>
+<arg>id:form-imagem</arg>
+<arg>https://picsum.photos/200/300</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T11:01:33.910701" elapsed="0.109373"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-18T11:01:34.020644" level="INFO">Clicking element 'class:lista-suspensa'.</msg>
+<arg>class:lista-suspensa</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T11:01:34.020366" elapsed="0.091084"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-18T11:01:34.111925" level="INFO">Clicking element '//option[contains(.,'Front-End')]'.</msg>
+<arg>//option[contains(.,'Front-End')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T11:01:34.111732" elapsed="0.034339"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-18T11:01:44.147005" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-18T11:01:34.146360" elapsed="10.001004"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-18T11:01:44.149504" level="INFO">Clicking element 'id:form-botao'.</msg>
+<arg>id:form-botao</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-18T11:01:44.148514" elapsed="0.070126"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-08-18T11:01:44.235583" level="INFO">Element 'class:colaborador' is displayed.</msg>
+<arg>class:colaborador</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-08-18T11:01:44.218988" elapsed="0.016684"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-18T11:01:49.236664" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-18T11:01:44.235929" elapsed="5.001003"/>
+</kw>
+<status status="PASS" start="2025-08-18T11:01:33.675749" elapsed="15.563577"/>
+</test>
+<status status="PASS" start="2025-08-18T11:01:30.568937" elapsed="18.672268"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Primeiro Teste" id="s1" pass="2" fail="0" skip="0">Primeiro Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
